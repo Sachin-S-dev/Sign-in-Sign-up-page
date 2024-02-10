@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Using html css and javascript</title>
+	<link rel="stylesheet" type="text/css" href="login & register.css">
+</head>
+<body>
+	<div class="login-page">
+		<div class="form">
+			<form class="register-form">
+				<input type="text" name="" placeholder=" User Name"/>
+				<input type="email" name="" placeholder="Email-id">
+				<input type="text" name="" placeholder="Phone Number">
+				<input type="password" name="" placeholder="Create Password"/>
+				<input type="password" name="" placeholder="Re-Enter Password"/>
+				<button>Create</button>
+				<p class="message">Already Registered?<a class="link" href="#"> Login</a></p>
+				
+			</form>
+			<form class="login-form">
+				<input type="text" name="" placeholder="Email-id">
+				<input type="text" name="" placeholder="Password">
+				<button>Login</button>
+		        <p class="message">Not Registered? <a class="link"href="#"> Register</a></p>		
+			</form>
+			
+		</div>
+	</div>
+
+
+<!-- this is jquery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js">	
+</script>
+<!-- this is javascript -->
+<script type="text/javascript">
+	$('.message a').click(function() {
+    $('form').animate({height:"toggle",opacity:"toggle"},"slow");		
+	});
+	
+// here we used toggle method//
+</script>
+</body>
+</html>
